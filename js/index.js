@@ -65,4 +65,39 @@ headerDOM.textContent = "DOM Is Awesome";
 const button = document.querySelector('button');
 button.textContent = "Get Started";
 
+const topSection = document.querySelectorAll('.top-content');
+console.log(topSection);
+
+
+const h4topSection = document.getElementsByTagName('h4');
+// console.log(h4topSection);
+const h4Array = Array.from(h4topSection);
+ console.log(h4Array);
+h4Array[0].textContent = 'Features';
+h4Array[1].textContent = 'About';
+h4Array[2].textContent = 'Services';
+h4Array[3].textContent = 'Product';
+h4Array[4].textContent = 'Vision';
+h4Array[5].textContent = siteContent['contact']['contact-h4'];
+const paragraph = document.getElementsByTagName('p');
+// console.log(paragraph)
+const eachParagraph = Array.from(paragraph);
+// console.log(eachParagraph)
+eachParagraph[0].textContent = siteContent['main-content']['features-content'];
+eachParagraph[1].textContent = siteContent['main-content']['about-content'];
+eachParagraph[2].textContent = siteContent['main-content']['services-content'];
+eachParagraph[3].textContent = siteContent['main-content']['product-content'];
+eachParagraph[4].textContent = siteContent['main-content']['vision-content'];
+eachParagraph[5].textContent = siteContent['contact']['address'];
+eachParagraph[6].textContent = siteContent['contact']['phone'];
+eachParagraph[7].textContent = siteContent['contact']['email'];
+eachParagraph[8].textContent = siteContent['footer']['copyright'];
+
+
+
+
+
+
+const footer = document.querySelectorAll('.contact');
+// console.log(footer)
 
