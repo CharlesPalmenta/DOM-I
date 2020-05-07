@@ -58,6 +58,20 @@ linksArray[2].textContent = 'Vision';
 linksArray[3].textContent = 'Features';
 linksArray[4].textContent = 'About';
 linksArray[5].textContent = 'Contact';
+linksArray.forEach(element => {
+  element.style.color = 'green';
+})
+const newLink = document.createElement('a');
+newLink.textContent = "Twitter";
+const linkElement = document.querySelector('nav');
+linkElement.prepend(newLink);
+newLink.style.color = 'green';
+
+const secondNewLink = document.createElement('a');
+secondNewLink.textContent = 'Github';
+linkElement.appendChild(secondNewLink);
+secondNewLink.style.color = 'green';
+
 
 const headerDOM = document.querySelector('h1');
 // console.log(headerDOM)
