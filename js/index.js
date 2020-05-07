@@ -59,4 +59,10 @@ linksArray[3].textContent = 'Features';
 linksArray[4].textContent = 'About';
 linksArray[5].textContent = 'Contact';
 
+const headerDOM = document.querySelector('h1');
+// console.log(headerDOM)
+headerDOM.textContent = "DOM Is Awesome";
+const button = document.querySelector('button');
+button.textContent = "Get Started";
+
 
