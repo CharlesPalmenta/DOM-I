@@ -46,3 +46,17 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
 const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const links = document.getElementsByTagName('a');
+// console.log(links)
+
+const linksArray = Array.from(links);
+// console.log(linksArray)
+linksArray[0].textContent = 'Services';
+linksArray[1].textContent = 'Product';
+linksArray[2].textContent = 'Vision';
+linksArray[3].textContent = 'Features';
+linksArray[4].textContent = 'About';
+linksArray[5].textContent = 'Contact';
+
+
